@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:background="@color/colortheme1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill details"
+            android:textSize="40dp"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+ <android.support.design.widget.TabLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     app:tabGravity="fill"
+     app:tabMode="fixed"
+     app:tabTextColor="@color/colorBlack"
+     app:tabIndicatorColor="@color/colorgrey"
+
+
+     ></android.support.design.widget.TabLayout>
+
+
+
+
+
+</LinearLayout>
