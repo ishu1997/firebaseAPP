@@ -2,12 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FormActivity">
 
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/form_AppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="0dp"
@@ -23,16 +25,20 @@
     </android.support.design.widget.AppBarLayout>
 
  <android.support.design.widget.TabLayout
+     android:id="@+id/form_TabLayout"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      app:tabGravity="fill"
      app:tabMode="fixed"
      app:tabTextColor="@color/colorBlack"
      app:tabIndicatorColor="@color/colorgrey"
+     android:background="@color/colortheme1">
+ </android.support.design.widget.TabLayout>
 
-
-     ></android.support.design.widget.TabLayout>
-
+    <android.support.v4.view.ViewPager
+        android:id="@+id/form_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
 
 
 
