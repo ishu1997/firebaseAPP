@@ -186,7 +186,7 @@ public class loginActivity extends AppCompatActivity {
 //        hideProgressDialog();
         if (user != null) {
 
-            Intent intent = new Intent(this, FormActivity.class);
+            Intent intent = new Intent(this, employee_or_employer.class);
             startActivity(intent);
 
         } else {

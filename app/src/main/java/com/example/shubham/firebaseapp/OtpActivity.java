@@ -334,7 +334,7 @@ public class OtpActivity extends AppCompatActivity implements View.OnClickListen
                 break;
             case STATE_SIGNIN_SUCCESS:
 
-                Intent intent = new Intent(this,FormActivity.class);
+                Intent intent = new Intent(this,employee_or_employer.class);
                 startActivity(intent);
                 // Np-op, handled by sign-in check
                 break;

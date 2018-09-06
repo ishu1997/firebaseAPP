@@ -39,6 +39,7 @@ public class FormActivity extends AppCompatActivity {
         // adding adapter to the view pager
         viewPager.setAdapter(adapter);
 
+
         //adding view pager to the tab layout
         tabLayout.setupWithViewPager(viewPager);
 
