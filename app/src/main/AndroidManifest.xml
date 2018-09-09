@@ -22,7 +22,8 @@
         <activity android:name=".OtpActivity" />
         <activity android:name=".FormActivity" />
         <activity android:name=".employee_or_employer" />
-        <activity android:name=".Employer_form"></activity>
+        <activity android:name=".Employer_form" />
+        <activity android:name=".employer_verification"></activity>
     </application>
 
 </manifest>

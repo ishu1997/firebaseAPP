@@ -32,7 +32,7 @@ public class Employer_form extends AppCompatActivity {
        employer_viewpager_adapter adapter = new employer_viewpager_adapter(getSupportFragmentManager());
 
         //adding fragments in the adpater
-        adapter.Add_fragment(new fragment_employer_form(), "about you");
+        adapter.Add_fragment(new fragment_employer_form(), "Profile setup");
 //        adapter.Add_fragment(new fragment_form_education() , "Education");
 //        adapter.Add_fragment(new fragment_form_experience() , "Experience");
 //        adapter.Add_fragment(new fragment_form_prefrences() , "Preferences");
