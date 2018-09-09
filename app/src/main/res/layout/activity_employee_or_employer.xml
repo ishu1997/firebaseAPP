@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employee_or_employer"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/niyokta"/>
+
+    <Button
+        android:id="@+id/select_employee"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="employee"
+        android:textColor="@color/white"
+        android:background="@drawable/round_button"
+        android:textSize="30sp"
+        android:onClick="start_form_employee"/>
+
+
+    <TextView
+
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/select_employer"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="employer"
+        android:textColor="@color/white"
+        android:background="@drawable/round_button"
+        android:textSize="30sp"
+        android:onClick="start_form_employer"/>
+
+
+
+
+</LinearLayout>
