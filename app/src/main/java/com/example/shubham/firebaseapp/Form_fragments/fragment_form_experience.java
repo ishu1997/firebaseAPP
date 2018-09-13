@@ -23,7 +23,7 @@ public class fragment_form_experience extends Fragment {
     RadioGroup radioGroup ;
     RadioButton radio_fresher , radio_experience;
     Button done_btn;
-
+    int exp = 2;
     EditText yearText , monthText , descriptionText;
     LinearLayout experience_layout;
 
@@ -56,9 +56,39 @@ public class fragment_form_experience extends Fragment {
         done_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"success" , Toast.LENGTH_SHORT).show();
-                viewPager = getActivity().findViewById(R.id.form_ViewPager);
-                viewPager.setCurrentItem(3);
+
+                if(exp == 1){
+                    if(!is_filled()){
+                        Toast.makeText(getActivity(),"fill fields correctly" , Toast.LENGTH_SHORT).show();
+                    }
+
+                    else{
+
+                    // add database for the experienced part here
+                        //year , month and description
+
+
+                        Toast.makeText(getActivity(),"success" , Toast.LENGTH_SHORT).show();
+                        viewPager = getActivity().findViewById(R.id.form_ViewPager);
+                        viewPager.setCurrentItem(3);
+                    }
+                }
+
+                else if(exp == 0){
+
+                    //add database for the fresher part here
+
+                    //just add exprience = "Fresher"
+
+                    Toast.makeText(getActivity(),"success" , Toast.LENGTH_SHORT).show();
+                    viewPager = getActivity().findViewById(R.id.form_ViewPager);
+                    viewPager.setCurrentItem(3);
+                }
+
+                else{
+                    Toast.makeText(getActivity(),"choose one" , Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -72,11 +102,14 @@ public class fragment_form_experience extends Fragment {
                 switch(checkedId) {
                     case R.id.form_exp_radiobutton:
                         //visible the desc and year/months
+
+                        exp=1;
                         experience_layout.setVisibility(View.VISIBLE);
 
                         break;
 
                     case R.id.form_fresher_radiobutton:
+                        exp=0;
                         //invisible the desc and year/months
                         experience_layout.setVisibility(View.GONE);
 
@@ -88,14 +121,24 @@ public class fragment_form_experience extends Fragment {
         });
 
 
-
-
-
-
-
-
-
         return view;
+    }
+
+    private boolean is_filled(){
+        String year = yearText.getText().toString();
+        String month = monthText.getText().toString();
+        String Desc = descriptionText.getText().toString();
+
+        if(year.isEmpty()){
+            return false;
+        }
+        if(month.isEmpty() || Integer.parseInt(month)>12 ){
+            return false;
+        }
+        if(Desc.isEmpty() ){
+            return false;
+        }
+        return true;
     }
 
 }
