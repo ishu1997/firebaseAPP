@@ -39,6 +39,7 @@
         android:textAllCaps="false"
         android:background="@drawable/round_button"
         android:textSize="30sp"
+        android:onClick="verfication_done"
         />
 
     <LinearLayout
