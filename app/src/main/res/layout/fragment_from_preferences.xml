@@ -10,7 +10,7 @@
 
     <TextView
         android:textAlignment="center"
-        android:text="Categories"
+        android:text="Location"
         android:textSize="30dp"
         android:textColor="@color/colorBlack"
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
 
         <TextView
             android:textAlignment="center"
-            android:text="Jobs preferences"
+            android:text="Jobs categories"
             android:textColor="@color/colorBlack"
             android:textSize="30dp"
             android:layout_width="match_parent"
