@@ -19,7 +19,7 @@ public class fragment_form_prefrences extends Fragment {
 
 
     View view;
-    ViewPager viewPager;
+
     Button done_btn;
     Spinner spin_Location ;
     Spinner spin_job_1 ;

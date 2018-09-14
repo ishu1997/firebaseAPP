@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/personal_employer_name"
+        android:id="@+id/personal_name_employer"
         android:layout_marginTop="@dimen/form_editTextTopmargin"
         android:layout_width="@dimen/form_editTextWidth"
         android:layout_gravity="center"
