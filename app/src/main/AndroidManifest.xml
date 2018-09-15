@@ -24,7 +24,8 @@
         <activity android:name=".employee_or_employer" />
         <activity android:name=".Employer_form" />
         <activity android:name=".employer_verification" />
-        <activity android:name=".job_post"></activity>
+        <activity android:name=".job_post" />
+        <activity android:name=".Employee_profile"></activity>
     </application>
 
 </manifest>

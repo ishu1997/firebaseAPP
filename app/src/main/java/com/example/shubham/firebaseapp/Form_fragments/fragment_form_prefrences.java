@@ -1,5 +1,6 @@
 package com.example.shubham.firebaseapp.Form_fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.shubham.firebaseapp.Employee_profile;
 import com.example.shubham.firebaseapp.R;
 
 public class fragment_form_prefrences extends Fragment {
@@ -77,6 +79,9 @@ public class fragment_form_prefrences extends Fragment {
 
                     // and also to start next acitvity
 
+
+                    Intent intent = new Intent(getActivity() , Employee_profile.class);
+                    startActivity(intent);
 
                 }
 
