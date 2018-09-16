@@ -28,7 +28,7 @@ public class fragment_form_prefrences extends Fragment {
     Spinner spin_job_2 ;
     Spinner spin_job_3 ;
 
-
+    String location , job1,job2,job3;
     public fragment_form_prefrences() {
 
     }
@@ -66,6 +66,8 @@ public class fragment_form_prefrences extends Fragment {
         spin_job_2.setAdapter(adapter);
         spin_job_3.setAdapter(adapter);
 
+
+
         // setting up location prefrences
 
 
@@ -80,6 +82,14 @@ public class fragment_form_prefrences extends Fragment {
                     // add frirebase code here to move data to server
 
                     // and also to start next acitvity
+
+                    location = spin_Location.getSelectedItem().toString();
+                    job1 = spin_job_1.getSelectedItem().toString();
+                    job2 = spin_job_2.getSelectedItem().toString();
+                    job3 = spin_job_3.getSelectedItem().toString();
+
+
+
 
 
                     Intent intent = new Intent(getActivity() , Employee_profile.class);
