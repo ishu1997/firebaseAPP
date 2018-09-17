@@ -48,9 +48,11 @@ public class job_post extends AppCompatActivity {
                 int month = cal.get(Calendar.MONTH);
                 int day = cal.get(Calendar.DAY_OF_MONTH);
 
-                DatePickerDialog datePickerDialog = new DatePickerDialog(getApplicationContext(),
-                        android.R.style.Theme_Material_Dialog_Alert,dateSetListener,year,month,day);
+              //  DatePickerDialog datePickerDialog = new DatePickerDialog(getApplicationContext(),
+                //        android.R.style.Theme_Material_Dialog_Alert,dateSetListener,year,month,day);
 
+                DatePickerDialog datePickerDialog = new DatePickerDialog(job_post.this,
+                        android.R.style.Theme_Material_Dialog_Alert,dateSetListener,year,month,day);
                 datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 datePickerDialog.show();
 
