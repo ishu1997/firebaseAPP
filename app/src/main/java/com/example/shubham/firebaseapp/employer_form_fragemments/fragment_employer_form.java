@@ -21,14 +21,20 @@ public class fragment_employer_form extends Fragment {
     Button next;
     EditText employer_name , employer_post , company_name,company_website, contact_number,contact_email , location;
 
-
+    String E_name ;
+    String E_post;
+    String C_name ;
+    String C_url ;
+    String E_phone ;
+    String E_email ;
+    String E_location;
     public fragment_employer_form() {
 
     }
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_employer_form , container , false);
         next = view.findViewById(R.id.form_employer_doneBTN);
 
@@ -53,6 +59,10 @@ public class fragment_employer_form extends Fragment {
 
                     Toast.makeText(getActivity(),"success" , Toast.LENGTH_SHORT ).show();
                     Intent intent = new Intent(getActivity(), employer_verification.class);
+
+                    intent.putExtra("NAME",E_name);
+                    intent.putExtra("PHONE",E_phone);
+                    intent.putExtra("LOCATION",E_location);
                     startActivity(intent);
                 }
                 else{
@@ -70,13 +80,13 @@ public class fragment_employer_form extends Fragment {
 
 
     private boolean is_filled(){
-        String E_name = employer_name.getText().toString();
-        String E_post = employer_post.getText().toString();
-        String C_name = company_name.getText().toString();
-        String C_url = company_website.getText().toString();
-        String E_phone = contact_number.getText().toString();
-        String E_email = contact_email.getText().toString();
-        String E_location = location.getText().toString();
+       E_name = employer_name.getText().toString();
+       E_post = employer_post.getText().toString();
+       C_name = company_name.getText().toString();
+       C_url = company_website.getText().toString();
+       E_phone = contact_number.getText().toString();
+       E_email = contact_email.getText().toString();
+       E_location = location.getText().toString();
 
 
         if(E_name.isEmpty()){

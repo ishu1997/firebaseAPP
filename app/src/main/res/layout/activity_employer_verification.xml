@@ -39,13 +39,14 @@
         android:textAllCaps="false"
         android:background="@drawable/round_button"
         android:textSize="30sp"
-        android:onClick="verfication_done"
+        android:visibility="visible"
         />
 
     <LinearLayout
+        android:id="@+id/verification_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:visibility="gone"
         android:orientation="vertical">
 
     <TextView
@@ -60,7 +61,7 @@
 
 
     <EditText
-        android:id="@+id/personal_employer_name"
+        android:id="@+id/verification_code"
         android:layout_marginTop="@dimen/form_editTextTopmargin"
         android:layout_width="@dimen/form_editTextWidth"
         android:layout_gravity="center"
@@ -91,6 +92,7 @@
             android:textColor="@color/white"
             android:background="@drawable/round_button"
             android:textSize="30sp"
+            android:onClick="verfication_done"
             />
 
         <Button
@@ -104,9 +106,22 @@
             android:textColor="@color/white"
             android:background="@drawable/round_button"
             android:textSize="30sp"
+            android:onClick="Resend_done"
             />
 
     </LinearLayout>
 
+
+
+
+
     </LinearLayout>
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:text="NOTE:- USE GOOGLE GMAIL APP TO SEND THE INFO FOR THE VERIFICATION CODE "/>
 </LinearLayout>

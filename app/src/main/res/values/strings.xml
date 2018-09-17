@@ -89,5 +89,6 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="appbar_scrolling_view">appbar_scrolling_view_behavior </string>
+    <string name="verif_code">ashoksir</string>
 
 </resources>
